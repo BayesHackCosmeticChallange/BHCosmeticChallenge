@@ -1,0 +1,49 @@
+//colors
+//$base_color: #E96D65; //base red
+$base_color: #98CACF;
+
+$lighter_color1: lighten($base_color, 10%);
+$lighter_color2: lighten($base_color, 20%);
+$lighter_color3: lighten($base_color, 30%);
+$white_to_color70: rgba(255, 255, 255, 0.7);
+$black_to_color30: rgba(0, 0, 0, 0.3);
+$darker_color: darken($base_color, 10%);
+$white: rgb(255,255,255);
+
+$white_40: rgba(255,255,255,0.4);
+$color_chestnut_rose_approx: #d9534f;
+$color_sunglo_approx: #e96d65;
+
+$color_red_30_approx: rgba(255, 0, 0, 0.3);
+$color_curious_blue_30_approx: rgba(52, 152, 219, 0.3);
+$color_mountain_meadow_30_approx: rgba(26, 188, 156,0.3);
+
+//colors
+// $green: #76c3bd;
+$white: #fff;
+$color_tradewind_approx: #69b1a9;
+$red: #e96d67;
+$red_light20: lighten($red, 20%);
+$blue: #3498db;
+$blue_light20: lighten($blue, 20%);
+$green: #16a085;
+$green_light20: lighten($green, 20%);
+$green_light40: lighten($green, 40%);
+
+//fonts
+$font0: Lato;
+$font1: Calibri;
+$font2: Arial;
+$font3: sans-serif;
+$font4: inherit;
+
+//font sizes
+$xxxxs:0.8rem; //label
+$xxxs:1rem; //p
+$xxs: 1.2rem; //h3
+$xs: 1.4rem; //h2
+$s: 2rem; //h1
+$m: 2.6rem;
+$l: 3.2rem;
+$xl: 3.8rem;
+$xxl: 4.4rem;

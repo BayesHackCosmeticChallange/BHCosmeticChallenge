@@ -1,0 +1,174 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 4, ../components/scss/_base.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 6, ../components/scss/_base.scss */
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 100%; }
+  /* line 11, ../components/scss/_base.scss */
+  html body {
+    font-family: Lato, Calibri, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    background: #98CACF;
+    font-weight: 300;
+    overflow-x: hidden; }
+    /* line 18, ../components/scss/_base.scss */
+    html body .container {
+      width: 100%;
+      margin: 0px;
+      padding: 0px; }
+    /* line 24, ../components/scss/_base.scss */
+    html body .row, html body div[class*='col'] {
+      margin: 0px; }
+    /* line 27, ../components/scss/_base.scss */
+    html body h1 {
+      margin: 0px 0px 5px 0px;
+      font-size: 2rem; }
+    /* line 31, ../components/scss/_base.scss */
+    html body h2 {
+      margin: 0px 0px 5px 0px;
+      font-size: 1.4rem; }
+    /* line 35, ../components/scss/_base.scss */
+    html body h3 {
+      font-size: 1.2rem; }
+    /* line 38, ../components/scss/_base.scss */
+    html body p {
+      font-size: 1rem; }
+    /* line 41, ../components/scss/_base.scss */
+    html body em {
+      font-style: italic; }
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 49, ../components/scss/_base.scss */
+.clearfix:before {
+  content: " ";
+  display: table; }
+/* line 53, ../components/scss/_base.scss */
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+/* line 60, ../components/scss/_base.scss */
+a {
+  outline: none;
+  color: #fff;
+  text-decoration: none; }
+  /* line 64, ../components/scss/_base.scss */
+  a:hover {
+    color: #fff;
+    text-decoration: none; }
+  /* line 68, ../components/scss/_base.scss */
+  a:active {
+    color: #fff;
+    text-decoration: none; }
+
+@media screen and (max-width: 45em) {
+  /* line 75, ../components/scss/_base.scss */
+  .main {
+    font-size: 2em;
+    width: 100%; } }
+@media screen and (max-width: 25em) {
+  /* line 82, ../components/scss/_base.scss */
+  .main {
+    width: 100%; } }
+/* line 2, ../components/scss/_modules.scss */
+.container header {
+  font-size: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5em 0 0.5em 0;
+  text-align: center;
+  background: white;
+  color: #98CACF; }
+/* line 12, ../components/scss/_modules.scss */
+.container section.profile {
+  margin: 10px 10px 10px 10px; }
+  /* line 14, ../components/scss/_modules.scss */
+  .container section.profile label {
+    display: block;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 0.8rem; }
+    /* line 19, ../components/scss/_modules.scss */
+    .container section.profile label span {
+      font-style: italic; }
+/* line 25, ../components/scss/_modules.scss */
+.container section.main {
+  padding: 0.5em;
+  width: 100%;
+  background: #deeeef;
+  color: #98CACF; }
+  /* line 31, ../components/scss/_modules.scss */
+  .container section.main .needProduct .thumbnail {
+    border: solid 2px #16a085; }
+  /* line 35, ../components/scss/_modules.scss */
+  .container section.main .loveProduct .thumbnail {
+    border: solid 2px #3498db; }
+  @media (max-width: 767px) {
+    /* line 40, ../components/scss/_modules.scss */
+    .container section.main .row .loveProduct .col-sm-6 {
+      padding-right: 0px;
+      padding-left: 0px; } }
