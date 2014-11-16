@@ -3,7 +3,7 @@
 		font-size: $xxxs;
 		width: 100%;
 		margin: 0 auto;
-		padding: 0.5em 0 0.5em 0;
+		padding: 0.5em 0.5em 0.5em 0.5em;
 		background: $lighter_color3;
 		color: $base_color;
 	}
@@ -81,4 +81,11 @@
 }
 
 .ui-helper-hidden-accessible { display:none; }
+ul.ui-autocomplete  {
+	display:block;
+	background:white;
+	color: $base_color;
+	width: 50%;
+	height: 200px;
+}
 

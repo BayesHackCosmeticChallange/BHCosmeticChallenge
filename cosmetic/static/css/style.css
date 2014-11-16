@@ -143,7 +143,7 @@ a {
   font-size: 1rem;
   width: 100%;
   margin: 0 auto;
-  padding: 0.5em 0 0.5em 0;
+  padding: 0.5em 0.5em 0.5em 0.5em;
   background: white;
   color: #98CACF; }
 /* line 11, ../components/scss/_modules.scss */
@@ -225,6 +225,14 @@ a {
 /* line 83, ../components/scss/_modules.scss */
 .ui-helper-hidden-accessible {
   display: none; }
+
+/* line 84, ../components/scss/_modules.scss */
+ul.ui-autocomplete {
+  display: block;
+  background: white;
+  color: #98CACF;
+  width: 50%;
+  height: 200px; }
 
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
