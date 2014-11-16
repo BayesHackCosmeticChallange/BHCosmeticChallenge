@@ -59,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/cosmetic/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.30952382" vertical-offset="641" max-vertical-offset="1590">
-              <caret line="54" column="45" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="45" />
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -620,7 +620,7 @@
     <entry file="file://$PROJECT_DIR$/cosmetic/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30952382" vertical-offset="641" max-vertical-offset="1590">
-          <caret line="54" column="45" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="45" />
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
