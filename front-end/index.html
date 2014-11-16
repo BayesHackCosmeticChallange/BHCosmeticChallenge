@@ -7,25 +7,47 @@
     <meta name="description" content="skin care personnalized recommendation">
     <link rel="shortcut icon" href="#"> 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="components/externaljs/jquery-1.11.1.min.js"></script>
+    <script src="components/externaljs/jquery-migrate-1.2.1.min.js"></script>
+    <script src="components/externaljs/d3.v3.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
   </head>
   <body>
     <div class="container">
       <header>
-        Brought to you by OuiSkin
+        Helping People taking care of their skin
       </header>
-      <section class="profile">
-        
-      </section><!-- profile -->
-      <section class="main">
-  
-      </section><!-- main -->
-      <section class="netPromoterScore">
-  
-      </section><!-- nps -->
+      <div class="row">
+        <div id="left" class="col-sm-3">
+          <div class="search">
+            <i class="fa fa-search"></i><input id="product" type="text" placeholder="Search product">
+          </div>
+          <div class="results">
+          </div>
+        </div><!-- left -->
+        <div id="main" class="col-sm-6">
+          <div>
+            <h1>Select a product</h1>
+          </div>
+        </div><!-- main -->
+        <div id="right" class="col-sm-3">
+          <div class="block">
+            yo
+          </div>
+          <div class="block">
+            yo
+          </div>
+          <div class="block">
+            yo
+          </div>
+        </div><!-- right -->
+      </div><!-- row -->
       <footer>
-
       </footer>
     </div> <!-- container -->
+    <script src="components/js/script.js"></script>    
+    <script src="components/js/radarPlot.js"></script>    
   </body>
 </html>

@@ -3,9 +3,13 @@
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
+html, body
+{
+    height: 100%;
+}
+
 html {
   position: relative;
-  min-height: 100%;
 	font-size: 100%;
 
 	body {
@@ -23,9 +27,10 @@ html {
 
 		.row, div[class*='col']{
 			margin:0px;
+			padding:0px;
 		}
 		h1 {
-			margin: 0px 0px 5px 0px;
+			margin: 0px;
 			font-size: $s;
 		}
 		h2 {

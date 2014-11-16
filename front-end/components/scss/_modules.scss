@@ -4,44 +4,63 @@
 		width: 100%;
 		margin: 0 auto;
 		padding: 0.5em 0 0.5em 0;
-		text-align: center;
 		background: $lighter_color3;
 		color: $base_color;
 	}
-	
-	section.profile {
-		margin: 10px 10px 10px 10px;
-		label {
-			display: block;
-			margin-top: 0px;
-			text-align: center;
-			font-size: $xxxxs;
-			span {
-				font-style: italic;
+
+	#left {
+		display: block;
+		bottom: 0px;
+		background-color: $lighter_color2;
+		border-right: 1px solid $lighter_color3;
+		div.search {
+			padding: 10px 0px;
+			border-bottom: 1px solid $lighter_color3;
+			i {
+				padding: 0px 10px;
 			}
+			input {
+				cursor: pointer;
+				border: none;
+				background-color: transparent;	
+				color: $darker_color;
+				@include placeholder {
+					color: white;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+		div.results {
+			height: 75px;
+			div {
+				cursor: pointer;
+				background: $darker_color;
+				border-bottom: 1px solid $lighter_color3;
+				height: 100%;
+				h3 {
+					display: inline-block;
+				}
+				img {				
+					display: inline-block;
+					float: right;
+					width: 75px;
+				}
+			}
+		}
+
+	}
+	#main {
+		h1 {
+			height:121px;
+			text-align: center;
 		}
 	}
-
-	section.main {
-		padding: 0.5em;
-		width: 100%;
-		background: $lighter_color2;
-		color: $base_color;
-
-		.needProduct .thumbnail {
-			border: solid 2px $green;
-		}
-
-		.loveProduct .thumbnail {
-			border: solid 2px $blue;
-		}
-
-		@media (max-width: 767px) {
-			.row .loveProduct .col-sm-6 {
-				padding-right: 0px;
-				padding-left: 0px;
-			}
-		}
+	#right {
+		background-color: $lighter_color1;
 	}
 }
+
+.ui-helper-hidden-accessible { display:none; }
 
