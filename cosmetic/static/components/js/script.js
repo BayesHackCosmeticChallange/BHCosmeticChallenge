@@ -38,7 +38,7 @@ $(function() {
           "<div id='feature4' hidden>" + ui.item.score.toxicity + "</div>"+
           "<div id='feature5' hidden>" + ui.item.score.lavant + "</div>"+
           "<div id='feature6' hidden>" + ui.item.score.rincable + "</div>"+
-          "<img src='img/" + ui.item.icon + "'>" :
+          "<img src='../static/image/productAvatar.png'>" :
           "Nothing selected, input was " + this.label);
         return false;
       },

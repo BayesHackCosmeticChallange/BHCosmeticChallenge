@@ -191,21 +191,35 @@ a {
       height: 100%; }
       /* line 42, ../components/scss/_modules.scss */
       .container #left div.results div h3 {
-        display: inline-block; }
-      /* line 45, ../components/scss/_modules.scss */
+        display: inline-block;
+        width: 70%;
+        text-align: center;
+        padding: 15px; }
+      /* line 48, ../components/scss/_modules.scss */
       .container #left div.results div img {
         display: inline-block;
-        float: right;
+        float: left;
         width: 75px; }
-/* line 55, ../components/scss/_modules.scss */
+/* line 58, ../components/scss/_modules.scss */
 .container #main h1 {
   height: 121px;
   text-align: center; }
-/* line 60, ../components/scss/_modules.scss */
+/* line 62, ../components/scss/_modules.scss */
+.container #main h3 {
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+  padding: 15px; }
+/* line 68, ../components/scss/_modules.scss */
+.container #main img {
+  display: inline-block;
+  float: left;
+  width: 75px; }
+/* line 75, ../components/scss/_modules.scss */
 .container #right {
   background-color: #bbdcdf; }
 
-/* line 65, ../components/scss/_modules.scss */
+/* line 80, ../components/scss/_modules.scss */
 .ui-helper-hidden-accessible {
   display: none; }
 
