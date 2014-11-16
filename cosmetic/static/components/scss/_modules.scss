@@ -1,11 +1,36 @@
+#fb {
+	position: absolute;
+	right: 0px;
+}
+
 .container {
 	header {
+		height: 32px;
 		font-size: $xxxs;
 		width: 100%;
 		margin: 0 auto;
-		padding: 0.5em 0.5em 0.5em 0.5em;
 		background: $lighter_color3;
 		color: $base_color;
+		#brandName {
+			position: absolute;
+			left:0px;
+			padding: 0.5em 0.5em 0.5em 0.5em;
+			text-transform: uppercase;
+			font-weight: 500;
+			border-right: solid 2px $base_color;
+	    -webkit-transition: left 1s; /* For Safari 3.1 to 6.0 */
+    	transition: left 1s;
+			&:hover {
+				left: -25px;
+			}
+			i {
+				margin-right:10px;
+			}
+		}
+		#tagLine {
+			padding: 0.5em 2em 0.5em 0.5em;
+			float: right;
+		}
 	}
 
 	#left {
@@ -60,8 +85,9 @@
 			height:121px;
 		}
 		h1 {
-			height:121px;
 			text-align: center;
+			padding-top: 20px;
+			height:121px;
 		}
 		h3 {
 					display: inline-block;
@@ -110,12 +136,37 @@
 }
 @media screen and (max-width: 800px) {
 	.container {
+		header {
+			#tagLine {
+				display: none;
+			}
+		}
 		#right {
 			height: 100%;
 			div#toxicReport {
 				font-size: $s;
 				text-align: center;
 				margin-top: 0px;
+			}
+		}
+		#main {
+			h1 {
+				i {
+					display: none;
+				}
+			}
+		}
+		#left {
+			div.results {
+				div {
+					h1 {
+						text-align: center;
+						margin: 0px;
+						&:hover{
+							margin: 0px;
+						}
+					}
+				}
 			}
 		}
 	}

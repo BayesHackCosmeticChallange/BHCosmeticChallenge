@@ -15,9 +15,18 @@
     <script src="http://localhost:35729/livereload.js"></script>
   </head>
   <body>
+  <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=179157655615658&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <div class="container">
       <header>
-        <i class="fa fa-heart-o"></i> Helping People taking care of their skin
+        <p id="brandName"><i class="fa fa-compass"></i>Oh my care</p>
+        <p id="tagLine"><i class="fa fa-heart-o"></i> Helping People taking care of their skin </p><div id="fb" class="fb-share-button" data-href="http://obscure-bayou-8082.herokuapp.com/main/" data-layout="icon"></div>
       </header>
       <div class="row">
         <div id="left" class="col-sm-3">
