@@ -93,6 +93,21 @@
 		}
 	}
 }
+@media screen and (max-width: 1005px) {
+	.container {
+		#left {
+			div.results {
+				div {
+					h3 {
+						text-align: center;
+						width:50%;
+						padding: 0px;
+					}
+				}
+			}
+		}
+	}
+}
 @media screen and (max-width: 800px) {
 	.container {
 		#right {
