@@ -9,12 +9,12 @@ var rtext = 60;
 var base_color = "#fff";
 var color = base_color;
 
-var feature1 = 'feature1'
-var feature2 = 'feature2'
-var feature3 = 'feature3'
-var feature4 = 'feature4'
-var feature5 = 'feature5'
-var feature6 = 'feature6'
+var feature1 = 'efficancy_long';
+var feature2 = 'smell';
+var feature3 = 'texture';
+var feature4 = 'toxicity';
+var feature5 = 'lavant';
+var feature6 = 'rincable';
 
 var branch_len = height / 2 - 2*rtext;
 
