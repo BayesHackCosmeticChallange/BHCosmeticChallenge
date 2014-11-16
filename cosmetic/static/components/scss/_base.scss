@@ -1,0 +1,91 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+html, body
+{
+    height: 100%;
+}
+
+html {
+  position: relative;
+	font-size: 100%;
+
+	body {
+		font-family: $font0, $font1, $font2, $font3;
+		color: $white_to_color70;
+		background: $base_color;
+		font-weight: 300;
+		overflow-x: hidden;
+		
+		.container {
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.row, div[class*='col']{
+			margin:0px;
+			padding:0px;
+		}
+		h1 {
+			margin: 0px;
+			font-size: $s;
+		}
+		h2 {
+			margin: 0px 0px 5px 0px;
+			font-size: $xs;
+		}
+		h3 {
+			font-size: $xxs;
+		}
+		p {
+			font-size: $xxxs;
+		}
+		em {
+			font-style: italic;
+		}
+	}
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix {
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+a {
+	outline: none;
+	color: $white;
+	text-decoration: none;
+	&:hover {
+		color: $white;
+		text-decoration: none;
+	}
+	&:active {
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 45em) {
+	.main {
+		font-size: 2em;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 25em) {
+	.main {
+		width: 100%;
+	}
+}
+

@@ -12,18 +12,23 @@ def render_chart(request, **kwargs):
         for content in all_contents:
             toxicity_query_set = Toxicity.objects.filter(cas=content.cas)
             if len(toxicity_query_set) == 0:
-                toxicity = 0
+                toxicity = {'cancer': 0, 'female_reproductive': 0,
+                            'male_reproductive': 0, 'developmental': 0}
                 pass
             else:
                 toxicity_content = toxicity_query_set[0]
-                toxicity = int(toxicity_content.cancer + toxicity_content.female_reproductive +
-                               toxicity_content.male_reproductive + toxicity_content.developmental)
+                toxicity = {'cancer': toxicity_content.cancer,
+                            'female_reproductive': toxicity_content.female_reproductive,
+                            'male_reproductive': toxicity_content.male_reproductive,
+                            'developmental': toxicity_content.developmental}
+
             json_response.append({'brandLabel': content.brand, 'productLabel': content.product,
                                   'label': content.brand + ' - ' + content.product,
-                                  'score': {'efficancy_long': content.efficancy_long,
-                                            'efficancy_short': content.efficancy_short,
-                                            'smell': content.smell, 'lavant': content.lavant,
-                                            'texture': content.texture, 'rincable': content.rincable,
+                                  'score': {'efficancy_long': max(float(0 if content.efficancy_long is None else content.efficancy_long) * 2, 5),
+                                            'efficancy_short': max(float(0 if content.efficancy_short is None else content.efficancy_short) * 2, 5),
+                                            'smell': max(float(0 if content.smell is None else content.smell) * 2, 5),
+                                            'quality on price': max(float(0 if content.quality is None else content.quality) * 2, 5),
+                                            'texture': max(float(0 if content.texture is None else content.texture) * 2, 5),
                                             'toxicity': toxicity}})
 
         return HttpResponse(json.dumps(json_response), content_type="application/json")

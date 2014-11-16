@@ -1,0 +1,91 @@
+.container {
+	header {
+		font-size: $xxxs;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0.5em 0.5em 0.5em 0.5em;
+		background: $lighter_color3;
+		color: $base_color;
+	}
+
+	#left {
+		display: block;
+		bottom: 0px;
+		background-color: $lighter_color2;
+		border-right: 1px solid $lighter_color3;
+		div.search {
+			padding: 10px 0px;
+			border-bottom: 1px solid $lighter_color3;
+			i {
+				padding: 0px 10px;
+			}
+			input {
+				cursor: pointer;
+				border: none;
+				background-color: transparent;	
+				color: $darker_color;
+				width:80%;
+				@include placeholder {
+					color: white;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+		div.results {
+			height: 75px;
+			div {
+				cursor: pointer;
+				background: $darker_color;
+				border-bottom: 1px solid $lighter_color3;
+				height: 100%;
+				h3 {
+					font-size: 100%;
+					display: inline-block;
+					width: 70%;
+					text-align: center;
+					padding: 15px;
+				}
+				img {				
+					display: inline-block;
+					float: left;
+					width: 75px;
+				}
+			}
+		}
+
+	}
+	#main {
+		h1 {
+			height:121px;
+			text-align: center;
+		}
+		h3 {
+					display: inline-block;
+					height:100%;
+					width: 70%;
+					text-align: center;
+					padding: 15px;
+				}
+		img {				
+			display: inline-block;
+			float: left;
+			width: 75px;
+		}
+	}
+
+	#right {
+		background-color: $lighter_color1;
+	}
+}
+
+.ui-helper-hidden-accessible { display:none; }
+ul.ui-autocomplete  {
+	display:block;
+	background:white;
+	color: $base_color;
+	width: 50%;
+	height: 200px;
+}
+

@@ -1,6 +1,6 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,38 +21,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -143,7 +143,7 @@ a {
   font-size: 1rem;
   width: 100%;
   margin: 0 auto;
-  padding: 0.5em 0 0.5em 0;
+  padding: 0.5em 0.5em 0.5em 0.5em;
   background: white;
   color: #98CACF; }
 /* line 11, ../components/scss/_modules.scss */
@@ -164,7 +164,8 @@ a {
       cursor: pointer;
       border: none;
       background-color: transparent;
-      color: #75b8bf; }
+      color: #75b8bf;
+      width: 80%; }
       /* line 2, ../components/scss/_mixins.scss */
       .container #left div.search input::-webkit-input-placeholder {
         color: white; }
@@ -177,37 +178,61 @@ a {
       /* line 2, ../components/scss/_mixins.scss */
       .container #left div.search input:-ms-input-placeholder {
         color: white; }
-      /* line 30, ../components/scss/_modules.scss */
+      /* line 31, ../components/scss/_modules.scss */
       .container #left div.search input:focus {
         outline: none; }
-  /* line 35, ../components/scss/_modules.scss */
+  /* line 36, ../components/scss/_modules.scss */
   .container #left div.results {
     height: 75px; }
-    /* line 37, ../components/scss/_modules.scss */
+    /* line 38, ../components/scss/_modules.scss */
     .container #left div.results div {
       cursor: pointer;
       background: #75b8bf;
       border-bottom: 1px solid white;
       height: 100%; }
-      /* line 42, ../components/scss/_modules.scss */
+      /* line 43, ../components/scss/_modules.scss */
       .container #left div.results div h3 {
-        display: inline-block; }
-      /* line 45, ../components/scss/_modules.scss */
+        font-size: 100%;
+        display: inline-block;
+        width: 70%;
+        text-align: center;
+        padding: 15px; }
+      /* line 50, ../components/scss/_modules.scss */
       .container #left div.results div img {
         display: inline-block;
-        float: right;
+        float: left;
         width: 75px; }
-/* line 55, ../components/scss/_modules.scss */
+/* line 60, ../components/scss/_modules.scss */
 .container #main h1 {
   height: 121px;
   text-align: center; }
-/* line 60, ../components/scss/_modules.scss */
+/* line 64, ../components/scss/_modules.scss */
+.container #main h3 {
+  display: inline-block;
+  height: 100%;
+  width: 70%;
+  text-align: center;
+  padding: 15px; }
+/* line 71, ../components/scss/_modules.scss */
+.container #main img {
+  display: inline-block;
+  float: left;
+  width: 75px; }
+/* line 78, ../components/scss/_modules.scss */
 .container #right {
   background-color: #bbdcdf; }
 
-/* line 65, ../components/scss/_modules.scss */
+/* line 83, ../components/scss/_modules.scss */
 .ui-helper-hidden-accessible {
   display: none; }
+
+/* line 84, ../components/scss/_modules.scss */
+ul.ui-autocomplete {
+  display: block;
+  background: white;
+  color: #98CACF;
+  width: 50%;
+  height: 200px; }
 
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome

@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+import urlparse
+urlparse.uses_netloc.append('mysql')
+POSTGRES_URL = urlparse.urlparse(os.environ['CLEARDB_DATABASE_URL'])
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -61,8 +64,10 @@ WSGI_APPLICATION = 'cosmetic.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cosmetic',
-        'USER': 'root',
+        'NAME': POSTGRES_URL.path[1:],
+        'USER': POSTGRES_URL.username,
+        'PASSWORD': POSTGRES_URL.password,
+        'HOST': POSTGRES_URL.hostname,
     }
 }
 
@@ -82,11 +87,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
+    STATIC_ROOT,
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
