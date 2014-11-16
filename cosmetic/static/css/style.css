@@ -149,17 +149,16 @@ a {
 /* line 11, ../components/scss/_modules.scss */
 .container #left {
   display: block;
-  bottom: 0px;
   background-color: #deeeef;
   border-right: 1px solid white; }
-  /* line 16, ../components/scss/_modules.scss */
+  /* line 15, ../components/scss/_modules.scss */
   .container #left div.search {
     padding: 10px 0px;
     border-bottom: 1px solid white; }
-    /* line 19, ../components/scss/_modules.scss */
+    /* line 18, ../components/scss/_modules.scss */
     .container #left div.search i {
       padding: 0px 10px; }
-    /* line 22, ../components/scss/_modules.scss */
+    /* line 21, ../components/scss/_modules.scss */
     .container #left div.search input {
       cursor: pointer;
       border: none;
@@ -178,48 +177,49 @@ a {
       /* line 2, ../components/scss/_mixins.scss */
       .container #left div.search input:-ms-input-placeholder {
         color: white; }
-      /* line 31, ../components/scss/_modules.scss */
+      /* line 30, ../components/scss/_modules.scss */
       .container #left div.search input:focus {
         outline: none; }
-  /* line 36, ../components/scss/_modules.scss */
+  /* line 35, ../components/scss/_modules.scss */
   .container #left div.results {
     height: 75px; }
-    /* line 38, ../components/scss/_modules.scss */
+    /* line 37, ../components/scss/_modules.scss */
     .container #left div.results div {
       cursor: pointer;
       background: #75b8bf;
       border-bottom: 1px solid white;
       height: 100%; }
-      /* line 43, ../components/scss/_modules.scss */
+      /* line 42, ../components/scss/_modules.scss */
       .container #left div.results div h3 {
         font-size: 100%;
         display: inline-block;
         width: 70%;
         text-align: center;
         padding: 15px; }
-      /* line 50, ../components/scss/_modules.scss */
+      /* line 49, ../components/scss/_modules.scss */
       .container #left div.results div img {
         display: inline-block;
         float: left;
         width: 75px; }
-/* line 60, ../components/scss/_modules.scss */
+/* line 59, ../components/scss/_modules.scss */
 .container #main h1 {
   height: 121px;
   text-align: center; }
-/* line 64, ../components/scss/_modules.scss */
+/* line 63, ../components/scss/_modules.scss */
 .container #main h3 {
   display: inline-block;
   height: 100%;
   width: 70%;
   text-align: center;
   padding: 15px; }
-/* line 71, ../components/scss/_modules.scss */
+/* line 70, ../components/scss/_modules.scss */
 .container #main img {
   display: inline-block;
   float: left;
   width: 75px; }
-/* line 78, ../components/scss/_modules.scss */
+/* line 77, ../components/scss/_modules.scss */
 .container #right {
+  border-left: 1px solid white;
   background-color: #bbdcdf; }
 
 /* line 83, ../components/scss/_modules.scss */

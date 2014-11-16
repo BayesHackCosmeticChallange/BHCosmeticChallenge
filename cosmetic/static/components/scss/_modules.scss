@@ -10,7 +10,6 @@
 
 	#left {
 		display: block;
-		bottom: 0px;
 		background-color: $lighter_color2;
 		border-right: 1px solid $lighter_color3;
 		div.search {
@@ -76,6 +75,7 @@
 	}
 
 	#right {
+		border-left: 1px solid $lighter_color3;
 		background-color: $lighter_color1;
 	}
 }

@@ -15,6 +15,11 @@ $(function() {
 	      $( ".results" ).scrollTop( 0 );
 	    }
 
+  function toxReport (message) {
+        console.log(message);
+        $( "#result" ).append( message );
+      }
+
   $( "#product" ).autocomplete({
     minLength: 0,
     source: cache,
@@ -32,13 +37,49 @@ $(function() {
           "<div id='feature5' hidden>" + ui.item.score.smell + "</div>"+
           "<img src='../static/image/productAvatar.png'>" :
           "Nothing selected, input was " + this.label);
+        console.log(ui.item.score.toxicity);
+        if (ui.item.score.toxicity.male_reproductive == 1){
+        toxReport ( 
+          "<div id='toxicity' hidden>Reported as toxic for male reproduction</div>"
+          );
+        }
+        else if (ui.item.score.toxicity.female_reproductive == 1){
+        toxReport ( 
+          "<div id='toxicity' hidden>Reported as toxic for female reproduction</div>"
+          );
+        }
+        else if (ui.item.score.toxicity.cancer == 1){
+        toxReport ( 
+          "<div id='toxicity' hidden>Reported as cancerogene</div>"
+          );
+        }
+        else if (ui.item.score.toxicity.developmental == 1){
+        toxReport ( 
+          "<div id='toxicity' hidden>Reported as potential teratogene</div>"
+          );
+        }
+        else {
+        toxReport ( 
+          "<div id='toxicity' hidden>Not reported as toxic</div>"
+          );  
+        }
         return false;
       },
   })
 
 	$( "#left" ).on( 'click', '#result', function (e) {
-		$("#main h1").hide();
+    
+    $("#main h1").hide();
 		$("#main div").html(this);
+    $("#main #toxicity").hide();
+
+    $("#right #toxicReport").html(this.lastElementChild);
+    $("#right #toxicity").show();
+
+
+    // $("#right #toxicity").show();
+
+
 		
 		for (var i = 0; i < 6; i++) {
 			var j = i  + 1;
