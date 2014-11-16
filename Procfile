@@ -1,1 +1,1 @@
-web: cd cosmetic/ && gunicorn cosmetic.wsgi.application
+web: cd cosmetic/ && gunicorn cosmetic.wsgi
