@@ -26,6 +26,7 @@ var svgContainer = d3.select("#main").append("svg")
         "width": '100%',
         "height": '100%'
     })
+    .attr("id", "star")
     .attr("viewBox", viewBox)
     .attr("preserveAspectRatio", "xMidYMin")
 

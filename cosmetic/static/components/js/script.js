@@ -22,7 +22,7 @@ $(function() {
 
   $( "#product" ).autocomplete({
     minLength: 0,
-    source: cache,
+    source: cache.slice(0, 5),
     focus: function( event, ui ) {
       $( "#product" ).val( ui.item.label );
       return false;

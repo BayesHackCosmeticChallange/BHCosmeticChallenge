@@ -83,9 +83,13 @@
 .ui-helper-hidden-accessible { display:none; }
 ul.ui-autocomplete  {
 	display:block;
-	background:white;
-	color: $base_color;
+	background:$darker_color_2;
+	color: white;
 	width: 50%;
-	height: 200px;
+
+	li {
+		height: 30px;
+		border-bottom: 1px solid $darker_color;
+	}
 }
 

@@ -229,10 +229,13 @@ a {
 /* line 84, ../components/scss/_modules.scss */
 ul.ui-autocomplete {
   display: block;
-  background: white;
-  color: #98CACF;
-  width: 50%;
-  height: 200px; }
+  background: #52a6af;
+  color: white;
+  width: 50%; }
+  /* line 90, ../components/scss/_modules.scss */
+  ul.ui-autocomplete li {
+    height: 30px;
+    border-bottom: 1px solid #75b8bf; }
 
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
