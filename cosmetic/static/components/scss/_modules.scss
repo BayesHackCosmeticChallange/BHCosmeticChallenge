@@ -56,6 +56,9 @@
 
 	}
 	#main {
+		#result {
+			height:121px;
+		}
 		h1 {
 			height:121px;
 			text-align: center;
@@ -77,7 +80,25 @@
 	#right {
 		border-left: 1px solid $lighter_color3;
 		background-color: $lighter_color1;
+		h1 {
+			margin-top: 20px;
+			text-align: center;
+			color: $darker_color_2;
+		}
+		div#toxicReport {
+			font-size: $s;
+			text-align: center;
+			margin-top: 100px;
+		}
 	}
+	@media screen and (max-width: 767px) {
+		div#toxicReport {
+			font-size: $s;
+			text-align: center;
+			margin-top: 0px;
+		}
+	}
+
 }
 
 .ui-helper-hidden-accessible { display:none; }
