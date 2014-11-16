@@ -1,10 +1,3 @@
-function selectedResult(selected) {
-	console.log(selected);
-	$("#main h1").hide();
-	$("#main div").html(selected);
-}
-
-
 $(function() {
   var products = [
     {
@@ -12,19 +5,35 @@ $(function() {
     	label: "Chanel - Lift",
       brandLabel: "Chanel",
       productLabel: "Lift",
-      icon: "imgTest.jpg"
+      icon: "imgTest.jpg",
+      score: { 
+				"feature1" : 1,  
+      	"feature2"  : 2,
+    		"feature3"  : 3,
+    		"feature4"  : 4,
+    		"feature5"  : 5,
+    		"feature6"  : 6
+    		}
     },
     {
     	value: "chanel-lift-2",
     	label: "Chanel - Lift 2",
       brandLabel: "Chanel",
       productLabel: "Lift 2",
-      icon: "imgTest.jpg"
+      icon: "imgTest.jpg",
+      score: { 
+				"feature1" : 1,  
+      	"feature2"  : 2,
+    		"feature3"  : 3,
+    		"feature4"  : 4,
+    		"feature5"  : 5,
+    		"feature6"  : 6
+    		}
     },
   ];
 
 	function log( message ) {
-	      $( "<div onclick='selectedResult(this)'>" ).html( message ).prependTo( ".results" );
+	      $( "<div id='result'>" ).html( message ).prependTo( ".results" );
 	      $( ".results" ).scrollTop( 0 );
 	    }
 
@@ -38,9 +47,33 @@ $(function() {
     select: function( event, ui ) {
         log( ui.item ?
           "<h3>" + ui.item.label + "</h3>" +
+          "<div hidden>" + ui.item.score.feature1 + "</div>"+
+          "<div hidden>" + ui.item.score.feature2 + "</div>"+
+          "<div hidden>" + ui.item.score.feature3 + "</div>"+
+          "<div hidden>" + ui.item.score.feature4 + "</div>"+
+          "<div hidden>" + ui.item.score.feature5 + "</div>"+
+          "<div hidden>" + ui.item.score.feature6 + "</div>"+
           "<img src='img/" + ui.item.icon + "'>" :
           "Nothing selected, input was " + this.label);
         return false;
       },
   })
+
+	function selectedResult(selected) {
+		console.log(selected);
+		$("#main h1").hide();
+		$("#main div").html(selected);
+		for (var i = 0; i < 6; i++) {
+		  d3.select('#handle' + i) 
+			.attr("cx", width/2 + (rcenter + 9 * branch_len/10) * Math.cos(2 * Math.PI / n_branch * i - Math.PI / 2))            
+			.attr("cy", height/2 + (rcenter + 9 * branch_len/10) * Math.sin(2 * Math.PI / n_branch * i - Math.PI / 2))
+		};
+		update_polygon();
+	}
+
+	$( "div" ).on( 'click', '#result', function (e) {
+			selectedResult(this);
+		return false;
+	});
+
 });

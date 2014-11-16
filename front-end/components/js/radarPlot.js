@@ -74,9 +74,10 @@ for (i=0 ; i<n_branch ; i++) {
         .attr("cx",width/2 + (rcenter + branch_len/2) * Math.cos(2 * Math.PI / n_branch * i - Math.PI / 2))
         .attr("cy",height/2 + (rcenter + branch_len/2) * Math.sin(2 * Math.PI / n_branch * i - Math.PI / 2))
         .attr("r", rhandle)
-        .attr("id", "page3handle" + i)
+        .attr("id", "handle" + i)
     handles.push(handle);
 }
+
 function update_polygon() {
     var handle_pol = "";
     for (i=0 ; i<n_branch ; i++) {
