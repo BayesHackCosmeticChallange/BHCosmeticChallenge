@@ -226,32 +226,32 @@ a {
   background-color: #bbdcdf; }
   /* line 83, ../components/scss/_modules.scss */
   .container #right h1 {
-    margin-top: 20px;
+    margin: 20px;
     text-align: center;
     color: #52a6af; }
   /* line 88, ../components/scss/_modules.scss */
   .container #right div#toxicReport {
     font-size: 2rem;
     text-align: center;
-    margin-top: 100px; }
-@media screen and (max-width: 767px) {
-  /* line 95, ../components/scss/_modules.scss */
-  .container div#toxicReport {
+    margin-top: 50px; }
+
+@media screen and (max-width: 800px) {
+  /* line 98, ../components/scss/_modules.scss */
+  .container #right div#toxicReport {
     font-size: 2rem;
     text-align: center;
     margin-top: 0px; } }
-
-/* line 104, ../components/scss/_modules.scss */
+/* line 106, ../components/scss/_modules.scss */
 .ui-helper-hidden-accessible {
   display: none; }
 
-/* line 105, ../components/scss/_modules.scss */
+/* line 107, ../components/scss/_modules.scss */
 ul.ui-autocomplete {
   display: block;
   background: #52a6af;
   color: white;
   width: 50%; }
-  /* line 111, ../components/scss/_modules.scss */
+  /* line 113, ../components/scss/_modules.scss */
   ul.ui-autocomplete li {
     height: 30px;
     border-bottom: 1px solid #75b8bf; }
