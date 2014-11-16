@@ -2,7 +2,7 @@
 var n_branch = 5;
 var height= 450;
 var width = 450;
-var viewBox = "0 40 450 450";
+var viewBox = "0 40 450 400";
 var rcenter = 0;
 var rhandle = 3;
 var rtext = 60;

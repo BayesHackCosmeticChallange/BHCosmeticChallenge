@@ -80,6 +80,7 @@
 	#right {
 		border-left: 1px solid $lighter_color3;
 		background-color: $lighter_color1;
+		height: 681px;
 		h1 {
 			margin: 20px;
 			text-align: center;
@@ -95,6 +96,7 @@
 @media screen and (max-width: 800px) {
 	.container {
 		#right {
+			height: 100%;
 			div#toxicReport {
 				font-size: $s;
 				text-align: center;
