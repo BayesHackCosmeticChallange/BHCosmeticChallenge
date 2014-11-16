@@ -1,8 +1,8 @@
 // svg part
 var n_branch = 6;
-var height= 500;
-var width = 500;
-var viewBox = "0 0 500 500";
+var height= 450;
+var width = 450;
+var viewBox = "0 40 450 450";
 var rcenter = 0;
 var rhandle = 3;
 var rtext = 60;

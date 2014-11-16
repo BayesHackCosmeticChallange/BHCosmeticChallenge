@@ -1,5 +1,4 @@
 .container {
-	display: table;
 	header {
 		font-size: $xxxs;
 		width: 100%;
@@ -8,6 +7,7 @@
 		background: $lighter_color3;
 		color: $base_color;
 	}
+
 	#left {
 		display: block;
 		bottom: 0px;
@@ -61,4 +61,6 @@
 		background-color: $lighter_color1;
 	}
 }
+
+.ui-helper-hidden-accessible { display:none; }
 
