@@ -59,7 +59,7 @@ $(function() {
       },
   })
 
-	$( "div" ).on( 'click', '#result', function (e) {
+	$( "#left" ).on( 'click', '#result', function (e) {
 		$("#main h1").hide();
 		$("#main div").html(this);
 		
@@ -69,8 +69,9 @@ $(function() {
 		  d3.select('#handle' + i) 
 			.attr("cx", width/2 + (rcenter + curValue * branch_len/10) * Math.cos(2 * Math.PI / n_branch * i - Math.PI / 2))            
 			.attr("cy", height/2 + (rcenter + curValue * branch_len/10) * Math.sin(2 * Math.PI / n_branch * i - Math.PI / 2))
+			update_value( i, curValue);
+			update_polygon();
 		};
-		update_polygon();
 		return false;
 	});
 

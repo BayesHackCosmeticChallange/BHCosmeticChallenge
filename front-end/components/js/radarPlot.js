@@ -85,6 +85,12 @@ function update_polygon() {
     }
     polygon.attr("points", handle_pol);
 }
+
+function update_value(selected, r) {
+    d3.select("#value" + selected)
+        .text(r);
+}
+
 update_polygon();
 
 
