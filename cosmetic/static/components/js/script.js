@@ -77,9 +77,6 @@ $(function() {
 
 
     // $("#right #toxicity").show();
-
-
-		
 		for (var i = 0; i < 6; i++) {
 			var j = i  + 1;
 			var curValue = $(this).find( "#feature" + j ).html();
@@ -92,4 +89,10 @@ $(function() {
 		return false;
 	});
 
+  $("input").on('click', function() {
+    if ($(this).val() != ""){
+      $(this).val("");
+    }
+    return false;
+  });
 });
