@@ -6,26 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1, user-scalable=no">
     <meta name="description" content="skin care personnalized recommendation">
     <link rel="shortcut icon" href="#"> 
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="http://localhost:35729/livereload.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <script src="/static/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/static/js/d3.v3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   </head>
   <body>
     <div class="container">
       <header>
-        Brought to you by OuiSkin
+        Helping People taking care of their skin
       </header>
-      <section class="profile">
-        
-      </section><!-- profile -->
-      <section class="main">
-  
-      </section><!-- main -->
-      <section class="netPromoterScore">
-  
-      </section><!-- nps -->
+      <div class="row">
+        <div id="left" class="col-sm-3">
+          <div class="search">
+            <i class="fa fa-search"></i><input id="product" type="text" placeholder="Search product">
+          </div>
+          <div class="results">
+          </div>
+        </div><!-- left -->
+        <div id="main" class="col-sm-6">
+          <div>
+            <h1>Select a product</h1>
+          </div>
+        </div><!-- main -->
+        <div id="right" class="col-sm-3">
+          <div class="block">
+            yo
+          </div>
+          <div class="block">
+            yo
+          </div>
+          <div class="block">
+            yo
+          </div>
+        </div><!-- right -->
+      </div><!-- row -->
       <footer>
-
       </footer>
     </div> <!-- container -->
+    <script src="/static/js/script.js"></script>
+    <script src="/static/js/radarPlot.js"></script>
   </body>
 </html>
