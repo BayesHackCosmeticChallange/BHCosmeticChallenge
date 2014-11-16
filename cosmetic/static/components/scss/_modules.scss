@@ -24,6 +24,7 @@
 				border: none;
 				background-color: transparent;	
 				color: $darker_color;
+				width:80%;
 				@include placeholder {
 					color: white;
 				}
