@@ -1,5 +1,5 @@
 // svg part
-var n_branch = 6;
+var n_branch = 5;
 var height= 450;
 var width = 450;
 var viewBox = "0 40 450 450";
@@ -9,18 +9,17 @@ var rtext = 60;
 var base_color = "#fff";
 var color = base_color;
 
-var feature1 = 'efficancy_long';
-var feature2 = 'smell';
-var feature3 = 'texture';
-var feature4 = 'toxicity';
-var feature5 = 'lavant';
-var feature6 = 'rincable';
+var feature1 = 'Efficacy - Long run';
+var feature2 = 'Efficacy - Short run';
+var feature3 = 'Price/Quality';
+var feature4 = 'Texture';
+var feature5 = 'Smell';
 
 var branch_len = height / 2 - 2*rtext;
 
 var handles = [];
 
-var names = [feature1, feature2,feature3, feature4, feature5, feature6];
+var names = [feature1, feature2,feature3, feature4, feature5];
 
 var svgContainer = d3.select("#main").append("svg")
     .attr({
