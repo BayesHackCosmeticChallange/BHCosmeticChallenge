@@ -20,7 +20,7 @@ def render_chart(request, **kwargs):
                                toxicity_content.male_reproductive + toxicity_content.developmental)
             json_response.append({'brandLabel': content.brand, 'productLabel': content.product,
                                   'label': content.brand + ' - ' + content.product,
-                                  'score': {'efficancy_long': content.efficancy_long,
+                                  'score': {'packaging': content.efficancy_long,
                                             'efficancy_short': content.efficancy_short,
                                             'smell': content.smell, 'lavant': content.lavant,
                                             'texture': content.texture, 'rincable': content.rincable,
