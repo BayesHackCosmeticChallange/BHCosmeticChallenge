@@ -32,12 +32,12 @@ $(function() {
     select: function( event, ui ) {
         log( ui.item ?
           "<h3>" + ui.item.label + "</h3>" +
-          "<div id='efficancy_long' hidden>" + ui.item.score.efficancy_long + "</div>"+
-          "<div id='smell' hidden>" + ui.item.score.smell + "</div>"+
-          "<div id='texture' hidden>" + ui.item.score.texture + "</div>"+
-          "<div id='toxicity' hidden>" + ui.item.score.toxicity + "</div>"+
-          "<div id='lavant' hidden>" + ui.item.score.lavant + "</div>"+
-          "<div id='rincable' hidden>" + ui.item.score.rincable + "</div>"+
+          "<div id='feature1' hidden>" + ui.item.score.efficancy_long + "</div>"+
+          "<div id='feature2' hidden>" + ui.item.score.smell + "</div>"+
+          "<div id='feature3' hidden>" + ui.item.score.texture + "</div>"+
+          "<div id='feature4' hidden>" + ui.item.score.toxicity + "</div>"+
+          "<div id='feature5' hidden>" + ui.item.score.lavant + "</div>"+
+          "<div id='feature6' hidden>" + ui.item.score.rincable + "</div>"+
           "<img src='img/" + ui.item.icon + "'>" :
           "Nothing selected, input was " + this.label);
         return false;
