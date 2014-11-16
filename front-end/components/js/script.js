@@ -42,6 +42,9 @@ $(function() {
     source: products,
     focus: function( event, ui ) {
       $( "#product" ).val( ui.item.label );
+      $( "#productImg" ).attr("src", 'img/' + ui.item.icon )
+      									.attr('width', '15px');
+
       return false;
     },
     select: function( event, ui ) {

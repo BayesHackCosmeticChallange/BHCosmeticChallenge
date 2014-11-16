@@ -44,7 +44,7 @@
 				}
 				img {				
 					display: inline-block;
-					float: right;
+					float: left;
 					width: 75px;
 				}
 			}
@@ -55,6 +55,17 @@
 		h1 {
 			height:121px;
 			text-align: center;
+		}
+		div {
+			height: 75px;
+			h3 {
+				display: inline-block;
+			}
+			img {				
+				display: inline-block;
+				float: left;
+				width: 75px;
+			}
 		}
 	}
 	#right {
