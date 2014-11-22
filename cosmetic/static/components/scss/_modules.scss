@@ -83,23 +83,24 @@
 	#main {
 		#result {
 			height:121px;
-		}
-		h1 {
-			text-align: center;
-			padding-top: 20px;
-			height:121px;
-		}
-		h3 {
+			h1 {
+				text-align: center;
+				padding-top: 20px;
+				height:121px;
+			}
+			h3 {
 					display: inline-block;
 					height:100%;
 					width: 70%;
 					text-align: center;
 					padding: 15px;
 				}
-		img {				
-			display: inline-block;
-			float: left;
-			width: 75px;
+			img {				
+				display: inline-block;
+				float: left;
+				width: 75px;
+				margin: -1px;
+			}
 		}
 	}
 
